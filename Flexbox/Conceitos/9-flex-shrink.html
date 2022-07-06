@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flex Shrink</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid gold;
+            max-width: 350px;
+        }
+
+        .items{
+            margin: 5px;
+            background-color: seagreen;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .shrink-1{
+            flex-shrink: 1;
+        }
+
+        .shrink-0{
+            flex-shrink: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Flex-shrink 1</h1>
+    <div class="flex-container">
+        <div class="items fg-1 shrink-1">abcde</div>
+        <div class="items fg-1 shrink-1">Frase generica</div>
+        <div class="items fg-1 shrink-1">d</div>
+        <div class="items fg-1 shrink-1">e</div>
+        <div class="items fg-1 shrink-1">FRASE ALEATORIA PARA PERCEPÇAO DE CONTEUDO</div>
+    </div>
+    <div class="flex-container">
+        <div class="items fg-1 shrink-1">a</div>
+        <div class="items fg-1 shrink-1">b</div>
+        <div class="items fg-1 shrink-1">c</div>
+        <div class="items fg-1 shrink-1">d</div>
+        <div class="items fg-1 shrink-1">e</div>
+    </div>
+
+    <h1>Flex-shrink 0</h1>
+    <div class="flex-container">
+        <div class="items fg-1 shrink-0">abcde</div>
+        <div class="items fg-1 shrink-0">Frase generica</div>
+        <div class="items fg-1 shrink-0">d</div>
+        <div class="items fg-1 shrink-0">e</div>
+        <div class="items fg-1 shrink-0">FRASE ALEATORIA PARA PERCEPÇAO DE CONTEUDO</div>
+    </div>
+
+</body>
+</html>

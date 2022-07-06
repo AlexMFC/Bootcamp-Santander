@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Flex Basis</title>
+
+    <style>
+        .flex-container{
+            max-width: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .items{
+            background-color: cyan;
+            color: black;
+            text-align: center;
+            margin: 5px;
+        }
+        
+        .basis-auto{
+            flex-basis: auto;
+        }
+
+        .basis-zero{
+            flex-basis: 0;
+        }
+
+        .basis-valores{
+            flex-basis: 40px;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Basis Auto</h1>
+    <div class="flex-container ">
+        <div class="items basis-auto fg-1">A</div>
+        <div class="items basis-auto fg-1">BBB</div>
+        <div class="items basis-auto fg-1">CC</div>
+        <div class="items basis-auto fg-2">DDDDDD</div>
+    </div>
+    
+
+    <h1>Basis 0(zero)</h1>
+    <div class="flex-container ">
+        <div class="items basis-zero fg-1">A</div>
+        <div class="items basis-zero fg-1">BBB</div>
+        <div class="items basis-zero fg-1">CC</div>
+        <div class="items basis-zero fg-2">DDDDDD</div>
+    </div>
+
+    <h1>Basis com valores</h1>
+    <div class="flex-container ">
+        <div class="items basis-valores fg-1">A</div>
+        <div class="items basis-valores fg-1">BBB</div>
+        <div class="items basis-valores fg-1">CC</div>
+        <div class="items basis-valores fg-2">DDDDDD</div>
+    </div>
+</body>
+</html>

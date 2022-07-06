@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-self </title>
+    <style>
+        .flex-container {
+            display: flex;
+            max-width: 300px;
+            border: solid 1px black;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            flex: 1;
+            background: goldenrod;
+            color: black;
+            font-size: 20px;
+            margin: 5px;
+        }
+
+        .align-auto {
+            align-self: auto;
+        }
+
+        .align-fs {
+            align-self: flex-start;
+        }
+
+        .align-fend {
+            align-self: flex-end;
+        }
+
+        .align-center {
+            align-self: center;
+        }
+
+        .align-stretch {
+            align-self: stretch;
+        }
+
+        .align-baseline {
+            align-self: baseline;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <section class="flex-container">
+        <div class="item align-auto">AAA</div>
+        <div class="item align-auto">123</div>
+        <div class="item align-auto">KAKAKAKAKKAKAKA</div>
+        <div class="item align-auto">Auto</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item align-center">AAA</div>
+        <div class="item align-fs">123</div>
+        <div class="item align-fend">KAKAKAKAKKAKAKA</div>
+        <div class="item align-auto">Auto</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item align-stretch">AAA</div>
+        <div class="item align-baseline">123</div>
+        <div class="item align-fend">KAKAKAKAKKAKAKA</div>
+        <div class="item align-auto">Auto</div>
+        <div class="item align-center">AutoAutoAutoAutoAutoAutoAutoAutoAutoAutoAutoAutoAuto</div>
+    </section>
+</body>
+
+</html>
